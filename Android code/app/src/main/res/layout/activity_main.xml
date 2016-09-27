@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.bodekjan.tankmarbiya.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My IP:"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0.0.0"
+                android:id="@+id/iptext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="She IP:"
+                android:id="@+id/textView2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0.0.0"
+                android:id="@+id/sheiptext" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manual IP:"
+                android:id="@+id/textView3" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0.0.0.0"
+                android:id="@+id/manualinput" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search"
+                android:id="@+id/searchbtn"
+                android:layout_weight="1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manual"
+                android:id="@+id/manual"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/seekBar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.bodekjan.tankmarbiya.widget.MyButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Left"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/turnleft"
+                android:layout_weight="1"
+                android:layout_margin="4dp" />
+
+            <com.bodekjan.tankmarbiya.widget.MyButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="RIGHT"
+                android:background="@drawable/btn_bg"
+                android:id="@+id/turnright"
+                android:layout_weight="1"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="220dp"
+        android:layout_height="match_parent">
+
+        <com.bodekjan.tankmarbiya.widget.MyButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="UP"
+            android:background="@drawable/btn_bg"
+            android:id="@+id/upbtn"
+            android:layout_weight="1"
+            android:layout_margin="4dp" />
+
+        <com.bodekjan.tankmarbiya.widget.MyButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DOWN"
+            android:background="@drawable/btn_bg"
+            android:id="@+id/downbtn"
+            android:layout_weight="1"
+            android:layout_margin="4dp" />
+    </LinearLayout>
+</LinearLayout>
